@@ -1,0 +1,17 @@
+<nav class="navigation header-nav">
+    <ul>
+        <li><a href="{{ site.url }}">Home</a></li>
+        {% for page in site.pages %}
+        {% if page.navi %}
+        <li>
+            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    <div class="icons">
+        <span class="fas fa-github"></span>
+        <span class="fas fa-codepen"></span>
+        <span class="fas fa-twitter"></span>
+    </div>
+</nav>

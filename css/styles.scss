@@ -1,0 +1,193 @@
+--- 
+# Front matter comment to ensure Jekyll properly reads file. 
+---
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@import 'syntax';
+@import 'reset';
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+// font awesome optimizations
+
+// VARIABLES
+$mint: #50E3C2;
+$electricpurp: #6935FF;
+$basegray: #2B2B2B;
+$headerfont: "Space Mono",
+'Courier New',
+Courier,
+monospace;
+$basefont: 'Rubik',
+Helvetica,
+Arial,
+sans-serif;
+// END VARIABLES
+
+// BEGIN MOBILE FIRST STYLING
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    .myname {
+        color: $mint;
+        border: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+// HOME styling
+
+.icons {
+    margin-left: auto;
+    padding-right: 30px;
+}
+
+.icons span {
+    font-family: fontawesome !important;
+    font-size: 5vmin;
+    padding-right: 30px;
+}
+
+.navigation {
+    padding: 25px 15px 65px 0;
+    display: flex;
+}
+
+.navigation li {
+    display: inline;
+    font-size: 1rem;
+    font-family: $basefont;
+    padding-right: 5vw;
+    text-transform: lowercase;
+    padding-left: 4.5vw;
+}
+
+.navigation a {
+    color: white;
+}
+
+// .header-nav class applies to navigation instances anywhere outside the home page
+
+.header-nav a {
+    color: $basegray;
+}
+
+.intro-container {
+    background: $basegray;
+    min-height: 48vh;
+    margin: 1vw;
+    box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, .3);
+}
+
+.myname {
+    font-family: $headerfont;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $mint;
+    font-size: 9vw;
+    padding: 0 5vw 5vw 5vw;
+    line-height: 10.5vw;
+}
+
+.intro-desc p {
+    font-family: $basefont;
+    color: #fff;
+    line-height: 4vh;
+    text-align: justify;
+    padding: 25px 6vw 25px 6vw;
+    letter-spacing: 1px;
+}
+
+.posts-container {
+    padding: 0 5%;
+    font-family: $basefont;
+}
+
+.post {
+    padding-top: 3%;
+}
+
+.post-content p {
+    line-height: 2rem;
+}
+
+.tags {
+    padding: 30px 0 0 30px;
+    display: inline-block;
+}
+
+.tags:before {
+    content: "■ ";
+    font-size: 1.4rem;
+}
+
+.post-title, .post-date {
+    display: inline;
+    font-family: $headerfont;
+    line-height: 10vh;
+}
+
+.post-date {
+    letter-spacing: 1px;
+}
+
+.post-title a {
+    color: $electricpurp;
+    font-size: 1rem;
+    &:hover {
+        border-bottom: 5px solid $electricpurp;
+        transition: 0.2s;
+    }
+}
+
+
+// END MOBILE FIRST STYLING
+
+// BEGIN DESKTOP ONLY STYLING
+@media (min-width: 1025px) {
+
+    .navigation li {
+        font-size: 3.4vmin;
+        
+    }
+
+    .navigation a {
+        &:hover {
+            border-bottom: 5px solid $electricpurp;
+            transition: 0.2s;
+        }
+    }
+
+
+     .intro-container {
+         height: 70vh;
+     }
+
+    .myname {
+        font-size: 5vw;
+        padding: 0 4.5vw;
+         line-height: 6vw;
+    }
+
+    .intro-desc p {
+        font-size: 1.5vw;
+        line-height: 5vh;
+        margin-left: 4.5vw;
+        max-width: 65vw;
+        letter-spacing: 1px;
+        padding: 25px 5px 25px 5px;
+    }
+
+}

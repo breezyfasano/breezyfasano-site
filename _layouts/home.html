@@ -1,0 +1,46 @@
+{% include head.html %}
+
+<div class="intro-container">
+    <nav class="navigation">
+        <ul>
+            {% for page in site.pages %}
+            {% if page.navi %}
+            <li>
+                <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+<div class="icons">
+<span {% if page.layout == "home" %}style="color: white;" {% endif %} class="fas fa-github"></span>
+<span {% if page.layout == "home" %}style="color: white;" {% endif %} class="fas fa-codepen"></span>
+<span {% if page.layout == "home" %}style="color: white;" {% endif %} class="fas fa-twitter"></span>
+</div>
+    </nav>
+
+    <h1 class="myname">breezy fasano<br> web design &amp; development</h1>
+    <span class="intro-desc"> {{ content }} </span>
+</div>
+
+<div class="posts-container">
+
+{% for post in site.posts %}
+<div class="post">
+    <h1 class="post-title">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+        </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date: '%m.%-d.%Y' }}</span><br>
+    <span class="post-content"> {{ post.content }}</span>
+    {%  for tags in post.tags %}
+    <span class="tags">{{ tags }}</span>
+    {% endfor %}
+
+</div>
+{% endfor %}
+
+</div>
+
+{% include footer.html %}

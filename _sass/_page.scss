@@ -1,0 +1,22 @@
+.page-header {
+    font-family: $headerfont;
+    font-size: 5.0vw;
+    color: $electricpurp;
+    display: inline-block;
+    padding: 20px;
+    margin: 0 0 10vh 0vw;
+    
+    &:after {
+        border-bottom: 1vh solid $mint;
+        min-width: 100%;
+        display: block;
+        content: ' ';
+        padding-top: 1vw;
+    }
+}
+
+
+.page-header--spacing {
+    margin: 0 0 5vh 0vw;
+
+}

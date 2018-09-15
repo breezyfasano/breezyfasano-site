@@ -2,8 +2,6 @@
 # Front matter comment to ensure Jekyll properly reads file. 
 ---
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
-@import 'syntax';
-@import 'reset';
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -47,6 +45,9 @@ a {
 }
 
 // HOME styling
+
+
+
 
 .icons {
     margin-left: auto;
@@ -119,7 +120,7 @@ a {
     padding-top: 3%;
 }
 
-.post-content p {
+.home-post-content p {
     line-height: 2rem;
 }
 
@@ -133,7 +134,7 @@ a {
     font-size: 1.4rem;
 }
 
-.post-title, .post-date {
+.home-post-title, .post-date {
     display: inline;
     font-family: $headerfont;
     line-height: 10vh;
@@ -143,7 +144,7 @@ a {
     letter-spacing: 1px;
 }
 
-.post-title a {
+.home-post-title a {
     color: $electricpurp;
     font-size: 1rem;
     &:hover {
@@ -155,39 +156,12 @@ a {
 
 // END MOBILE FIRST STYLING
 
-// BEGIN DESKTOP ONLY STYLING
-@media (min-width: 1025px) {
-
-    .navigation li {
-        font-size: 3.4vmin;
-        
-    }
-
-    .navigation a {
-        &:hover {
-            border-bottom: 5px solid $electricpurp;
-            transition: 0.2s;
-        }
-    }
+@import 'posts';
+@import 'syntax';
+@import 'reset';
+@import 'page';
+@import 'footer';
 
 
-     .intro-container {
-         height: 70vh;
-     }
 
-    .myname {
-        font-size: 5vw;
-        padding: 0 4.5vw;
-         line-height: 6vw;
-    }
-
-    .intro-desc p {
-        font-size: 1.5vw;
-        line-height: 5vh;
-        margin-left: 4.5vw;
-        max-width: 65vw;
-        letter-spacing: 1px;
-        padding: 25px 5px 25px 5px;
-    }
-
-}
+@import 'desktop-only';

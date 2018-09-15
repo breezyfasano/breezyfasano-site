@@ -1,0 +1,64 @@
+// BEGIN DESKTOP ONLY STYLING
+@media (min-width: 1025px) {
+
+// header navigation
+    
+    .navigation li {
+        font-size: 3.4vmin;
+
+    }
+
+    .navigation a {
+        &:hover {
+            border-bottom: 5px solid $electricpurp;
+            transition: 0.2s;
+        }
+    }
+
+
+    // home.html styling
+
+    .intro-container {
+        height: 70vh;
+    }
+
+    .myname {
+        font-size: 5vw;
+        padding: 0 4.5vw;
+        line-height: 6vw;
+    }
+
+    .intro-desc p {
+        font-size: 1.5vw;
+        line-height: 5vh;
+        margin-left: 4.5vw;
+        max-width: 65vw;
+        letter-spacing: 1px;
+        padding: 25px 5px 25px 5px;
+    }
+
+    // page.html styling
+
+    .page-header {
+        font-size: 4.1vw;
+    }
+    
+    // footer.html styling
+    .footer {
+        font-size: 1vw;
+    }
+
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) { // if unsupported IE
+
+    .myname {
+        color: $mint;
+        border: 0;
+    }
+
+    .page-header {
+        color: $electricpurp;
+    }
+}

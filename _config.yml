@@ -20,6 +20,8 @@ plugins:
   - jekyll-feed
   - jekyll-archives
 
+sass:
+  style: compressed
 
 jekyll-archives:
   enabled: all

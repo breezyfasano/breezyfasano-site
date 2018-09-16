@@ -28,14 +28,14 @@
 <div class="post">
     <h1 class="home-post-title">
         <a href="{{ site.baseurl }}{{ post.url }}">
-            {{ post.title }}
-        </a>
+        {{ post.title }}</a>
     </h1>
 
     <span class="post-date">{{ post.date | date: '%m.%-d.%Y' }}</span><br>
     <span class="home-post-content"> {{ post.content }}</span>
-    {%  for tags in post.tags %}
-    <span class="tags">{{ tags }}</span>
+
+     {% for tag in post.tags %}
+    <a class="tags" href="/tags/{{ tag }}/">{{ tag }}</a>
     {% endfor %}
 
 </div>

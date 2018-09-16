@@ -1,22 +1,23 @@
-.page-header {
+.page-header { // also class used for post titles
     font-family: $headerfont;
-    font-size: 5.0vw;
+    font-size: 4vw;
     color: $electricpurp;
     display: inline-block;
     padding: 20px;
-    margin: 0 0 10vh 0vw;
+    margin: 0 0 5vw 0vw;
     
     &:after {
-        border-bottom: 1vh solid $mint;
+        background: $mint;
         min-width: 100%;
         display: block;
         content: ' ';
         padding-top: 1vw;
+        margin-top: 1vw;
     }
 }
 
 
 .page-header--spacing {
-    margin: 0 0 5vh 0vw;
+    margin: 0 0 5vh 0vw; 
 
 }

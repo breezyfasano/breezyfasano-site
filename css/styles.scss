@@ -8,13 +8,6 @@
    License: none (public domain)
 */
 
-
-* {
-    box-sizing: border-box;
-}
-
-// font awesome optimizations
-
 // VARIABLES
 $mint: #50E3C2;
 $electricpurp: #6935FF;
@@ -29,16 +22,15 @@ Arial,
 sans-serif;
 // END VARIABLES
 
-// BEGIN MOBILE FIRST STYLING
 
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
-    /* IE10+ CSS styles go here */
-    .myname {
-        color: $mint;
-        border: 0;
-    }
+* {
+    box-sizing: border-box;
 }
+
+// font awesome optimizations
+
+
+// BEGIN MOBILE FIRST STYLING
 
 a {
     text-decoration: none;
@@ -112,7 +104,7 @@ a {
 }
 
 .posts-container {
-    padding: 0 5%;
+    padding: 0 5vw;
     font-family: $basefont;
 }
 
@@ -125,28 +117,32 @@ a {
 }
 
 .tags {
-    padding: 30px 0 0 30px;
+    margin: 30px 0 0 30px;
     display: inline-block;
+    background-color: $mint;
+    padding: 7px;
+    border-radius: 5%;
+    font-size: .8rem;
+    color: $basegray;
 }
 
-.tags:before {
-    content: "■ ";
-    font-size: 1.4rem;
-}
+
 
 .home-post-title, .post-date {
     display: inline;
     font-family: $headerfont;
     line-height: 10vh;
+    font-size: 1rem;
 }
 
 .post-date {
     letter-spacing: 1px;
+    padding-left: 15px;
+    color: $basegray;
 }
 
-.home-post-title a {
+a {
     color: $electricpurp;
-    font-size: 1rem;
     &:hover {
         border-bottom: 5px solid $electricpurp;
         transition: 0.2s;
@@ -160,6 +156,7 @@ a {
 @import 'syntax';
 @import 'reset';
 @import 'page';
+@import 'archive';
 @import 'footer';
 
 

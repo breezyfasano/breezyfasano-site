@@ -12,9 +12,9 @@
             {% endfor %}
         </ul>
 <div class="icons">
-<span {% if page.layout == "home" %}style="color: white;" {% endif %} class="fas fa-github"></span>
-<span {% if page.layout == "home" %}style="color: white;" {% endif %} class="fas fa-codepen"></span>
-<span {% if page.layout == "home" %}style="color: white;" {% endif %} class="fas fa-twitter"></span>
+<a class="icon-a" href="https://www.github.com/breezyfasano"><span {% if page.layout == "home" %}style="color: white;" {% endif %} class="fas fa-github"></span></a>
+<a class="icon-a" href="https://www.codepen.io/breezyfasano"><span {% if page.layout == "home" %}style="color: white;" {% endif %} class="fas fa-codepen"></span></a>
+<a class="icon-a" href="https://www.linkedin.com/breezyfasano"><span {% if page.layout=="home" %}style="color: white;" {% endif %} class="fas fa-linkedin"></span></a>
 </div>
     </nav>
 
@@ -33,12 +33,12 @@
 
     <span class="post-date">{{ post.date | date: '%m.%-d.%Y' }}</span><br>
     <span class="home-post-content"> {{ post.content }}</span>
-
+    <br>
      {% for tag in post.tags %}
     <a class="tags" href="/tags/{{ tag }}/">{{ tag }}</a>
     {% endfor %}
-
 </div>
+<hr>
 {% endfor %}
 
 </div>

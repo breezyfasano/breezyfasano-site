@@ -8,12 +8,12 @@
 
     }
 
-    .navigation a {
+    .navigation ul a {
         &:hover {
             border-bottom: 5px solid $electricpurp;
             transition: 0.2s;
         }
-    }
+}
 
 
     // home.html styling

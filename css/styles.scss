@@ -50,6 +50,7 @@ a {
     font-family: fontawesome !important;
     font-size: 5vmin;
     padding-right: 30px;
+    
 }
 
 .navigation {
@@ -72,9 +73,13 @@ a {
 
 // .header-nav class applies to navigation instances anywhere outside the home page
 
-.header-nav a {
-    color: $basegray;
+.header-nav {
+    margin-top: 2vh;
 }
+
+.header-nav a {
+        color: $basegray;
+    }
 
 .intro-container {
     background: $basegray;
@@ -106,24 +111,33 @@ a {
 .posts-container {
     padding: 0 5vw;
     font-family: $basefont;
+    min-height: calc(100vh - 30vh); // sticky footer
 }
 
 .post {
     padding-top: 3%;
+    
 }
 
-.home-post-content p {
-    line-height: 2rem;
+.home-post-content 
+{
+    display: block;
+    margin-bottom: -10px;
+    p {
+        line-height: 2rem;
+    }
 }
 
 .tags {
-    margin: 30px 0 0 30px;
-    display: inline-block;
+    font-family: $headerfont;
+    margin:0 0 0 10px;
+    display: inline;
     background-color: $mint;
-    padding: 7px;
+    padding:5px;
     border-radius: 5%;
     font-size: .8rem;
     color: $basegray;
+    font-weight: bold;
 }
 
 
@@ -131,7 +145,7 @@ a {
 .home-post-title, .post-date {
     display: inline;
     font-family: $headerfont;
-    line-height: 10vh;
+    line-height: 7vh;
     font-size: 1rem;
 }
 
@@ -149,6 +163,15 @@ a {
     }
 }
 
+.icon-a {
+    color: inherit;
+    &:hover {
+        border-bottom: 0px solid transparent;
+        transition: .2s;
+        color: transparent;
+    }
+}
+
 
 // END MOBILE FIRST STYLING
 
@@ -156,9 +179,8 @@ a {
 @import 'syntax';
 @import 'reset';
 @import 'page';
-@import 'archive';
 @import 'footer';
 
 
-
+@import 'posts';
 @import 'desktop-only';

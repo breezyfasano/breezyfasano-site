@@ -1,7 +1,51 @@
-body {
+body:not(a) {
     font-family: $basefont;
+    line-height: 4.5vh;
 }
 
 .post-content p {
     line-height: 2rem;
+}
+
+.post-content {
+    display: block;
+    margin-bottom:4.5vh;
+    line-height: 3rem;
+    ul {
+        list-style-type: circle;
+    }
+    ol {
+        list-style-type: decimal-leading-zero;
+    }
+
+    blockquote {
+        font-size: 1.4vw;
+        font-family: $basefont;
+        color: $basegray;
+        background: #b299ff;
+        padding: 15px;
+        margin: 50px 0 50px 0;
+        border-radius: 3px;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size:2rem;
+    }
+
+    h1, h2, h3 {
+        margin: 5vh 0 1vh 0;
+    }
+}
+
+hr {
+    display: block;
+    margin-top: 6vh;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }

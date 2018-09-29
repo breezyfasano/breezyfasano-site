@@ -1,17 +1,13 @@
---- 
-# Front matter comment to ensure Jekyll properly reads file. 
 ---
-@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+# Front matter comment to ensure Jekyll properly reads file.
+---
+ @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
 // VARIABLES
 $mint: #50E3C2;
 $electricpurp: #6935FF;
 $basegray: #2B2B2B;
+$lightgray: #efefef;
 $headerfont: "Space Mono",
 'Courier New',
 Courier,
@@ -50,7 +46,7 @@ a {
     font-family: fontawesome !important;
     font-size: 5vmin;
     padding-right: 30px;
-    
+
 }
 
 .navigation {
@@ -78,8 +74,8 @@ a {
 }
 
 .header-nav a {
-        color: $basegray;
-    }
+    color: $basegray;
+}
 
 .intro-container {
     background: $basegray;
@@ -116,13 +112,13 @@ a {
 
 .post {
     padding-top: 3%;
-    
+
 }
 
-.home-post-content 
-{
+.home-post-content {
     display: block;
     margin-bottom: -10px;
+
     p {
         line-height: 2rem;
     }
@@ -130,10 +126,10 @@ a {
 
 .tags {
     font-family: $headerfont;
-    margin:0 0 0 10px;
+    margin: 0 0 0 10px;
     display: inline;
     background-color: $mint;
-    padding:5px;
+    padding: 5px;
     border-radius: 5%;
     font-size: .8rem;
     color: $basegray;
@@ -142,7 +138,8 @@ a {
 
 
 
-.home-post-title, .post-date {
+.home-post-title,
+.post-date {
     display: inline;
     font-family: $headerfont;
     line-height: 7vh;
@@ -157,6 +154,7 @@ a {
 
 a {
     color: $electricpurp;
+
     &:hover {
         border-bottom: 5px solid $electricpurp;
         transition: 0.2s;
@@ -165,6 +163,7 @@ a {
 
 .icon-a {
     color: inherit;
+
     &:hover {
         border-bottom: 0px solid transparent;
         transition: .2s;
@@ -180,7 +179,4 @@ a {
 @import 'reset';
 @import 'page';
 @import 'footer';
-
-
-@import 'posts';
 @import 'desktop-only';

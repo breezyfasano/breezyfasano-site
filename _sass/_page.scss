@@ -1,6 +1,6 @@
 .page-header { // also class used for post titles
     font-family: $headerfont;
-    font-size: 4vw;
+    font-size: 8vw;
     color: $electricpurp;
     display: inline-block;
     margin: 0 0 5vw 0vw;
@@ -8,6 +8,7 @@
     &:after {
         background: $mint;
         min-width: 100%;
+        min-height: 4px;
         display: block;
         content: ' ';
         padding-top: 1vw;

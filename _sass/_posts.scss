@@ -1,9 +1,5 @@
 body:not(a) {
     font-family: $basefont;
-    line-height: 4.5vh;
-}
-
-.post-content p {
     line-height: 2rem;
 }
 
@@ -11,6 +7,7 @@ body:not(a) {
     display: block;
     margin-bottom:4.5vh;
     line-height: 3rem;
+    
     ul {
         list-style-type: circle;
     }
@@ -18,14 +15,22 @@ body:not(a) {
         list-style-type: decimal-leading-zero;
     }
 
+    ul, ol {
+        padding-left: 10px;
+    }
+
+    p {
+        line-height: 1.9rem; //main line height for post body
+    }
     blockquote {
-        font-size: 1.4vw;
+        font-size: 1.2em;
         font-family: $basefont;
         color: $basegray;
-        background: #b299ff;
-        padding: 15px;
-        margin: 50px 0 50px 0;
+        background: $lightgray;
+        padding: 25px 0 25px 15px;
+        margin: 50px 0 50px 15px;
         border-radius: 3px;
+        border-left: 6px solid $electricpurp;
     }
 
     h1 {
@@ -34,10 +39,11 @@ body:not(a) {
 
     h2 {
         font-size:2rem;
+        color: $electricpurp;
     }
 
     h1, h2, h3 {
-        margin: 5vh 0 1vh 0;
+        margin: 1.5rem 0 1.2rem 0;
     }
 }
 

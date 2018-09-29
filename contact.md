@@ -1,8 +1,6 @@
 ---
-layout: page
+layout: contact
 title: Contact
 permalink: /contact/
 navi: true
 ---
-
-## Under construction!

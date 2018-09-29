@@ -1,0 +1,29 @@
+{% include head.html %}
+{% include header.html %}
+
+
+<div class="posts-container">
+    <h1 class="page-header page-header--spacing"> {{ page.title }}</h1>
+
+    <span class="post-content">{{ content }}</span>
+
+    <div class="form-container"></div>
+    <form name="contact" method="POST" netlify>
+        <p>
+            <label>Your Name: <br><input type="text" name="name" /></label>
+        </p>
+        <p>
+            <label>Your Email: <br><input type="email" name="email" /></label>
+        </p>
+        <p>
+            <label>Message:
+                <br><textarea name="message"></textarea></label>
+        </p>
+        <p>
+            <button type="submit">Send</button>
+        </p>
+    </form>
+</div>
+</div>
+
+{% include footer.html %}

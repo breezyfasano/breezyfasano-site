@@ -1,6 +1,11 @@
 body:not(a) {
     font-family: $basefont;
     line-height: 2rem;
+    width: 100vw;
+}
+
+.post-container {
+    max-width: 1500px;
 }
 
 .post-date__post {
@@ -27,6 +32,7 @@ body:not(a) {
     p {
         line-height: 1.9rem; //main line height for post body
         margin-top: 20px;
+        font-size: 1rem;
     }
     blockquote {
         font-size: 1.2em;

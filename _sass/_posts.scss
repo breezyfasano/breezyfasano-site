@@ -12,11 +12,11 @@ body:not(a) {
         list-style-type: circle;
     }
     ol {
-        list-style-type: decimal-leading-zero;
+        list-style-type: decimal;
     }
 
     ul, ol {
-        padding-left: 10px;
+        list-style-position: inside;
     }
 
     p {

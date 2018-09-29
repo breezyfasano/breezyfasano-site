@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: CSS Animation
-title: My First Post
+title: My First Post and the Title is Long
 ---
 ## Overview
 

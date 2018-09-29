@@ -3,6 +3,11 @@ body:not(a) {
     line-height: 2rem;
 }
 
+.post-date__post {
+    padding: 0;
+    font-size: 5vw;
+}
+
 .post-content {
     display: block;
     margin-bottom:4.5vh;
@@ -21,6 +26,7 @@ body:not(a) {
 
     p {
         line-height: 1.9rem; //main line height for post body
+        margin-top: 20px;
     }
     blockquote {
         font-size: 1.2em;

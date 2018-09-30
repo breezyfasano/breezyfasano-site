@@ -1,0 +1,42 @@
+.form-container {
+    width: 80vw;
+}
+
+input {
+    height: 5vh;
+    width: 100%;
+}
+
+.input--border {
+    border: 1px solid $lightgray;
+}
+
+textarea {
+    height: 20vh;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+.label {
+    font-family: $headerfont;
+    display: block;
+    padding: 1vw 0 1vw 0;
+    color: $electricpurp;
+}
+
+.button {
+    font-family: $headerfont;
+    display: block;
+    color: $mint;
+    font-size: 4vw;
+    background: transparent;
+    border: 2px solid $mint;
+    padding: 2vw 8vw 2vw 8vw;
+    border-radius: 40px;
+    margin: 0 auto 0 auto;
+    &:hover {
+        color: white;
+        background: $mint;
+        cursor: pointer;
+    }
+}

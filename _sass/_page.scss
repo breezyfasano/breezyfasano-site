@@ -3,7 +3,6 @@
     font-size: 7vw;
     color: $electricpurp;
     display: inline-block;
-    margin: 0 0 5vw 0vw;
     line-height: 8vw;
     
     &:after {
@@ -15,10 +14,4 @@
         padding-top: 1vw;
         margin-top: 1vw;
     }
-}
-
-
-.page-header--spacing {
-    margin: 0 0 5vh 0vw; 
-
 }

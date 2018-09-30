@@ -62,12 +62,24 @@
         }
     }
 
+    // contact form styling
+
+    .form-container {
+        width: 40vw;
+    }
+    
+    .button {
+        font-size: 2vw;
+        padding: .3vw 4vw .6vw 4vw;
+    }
+
     // footer.html styling
     .footer {
         font-size: 1vw;
     }
 
 }
+
 
 @media all and (-ms-high-contrast: none),
 (-ms-high-contrast: active) { // if unsupported IE

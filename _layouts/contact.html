@@ -7,23 +7,24 @@
 
     <span class="post-content">{{ content }}</span>
 
-    <div class="form-container"></div>
-    <form name="contact" method="POST" netlify>
+    <div class="form-container">
+            <form name="contact" method="POST" netlify>
         <p>
-            <label>Your Name: <br><input type="text" name="name" /></label>
+<label class="label">Your Name: <br><input type="text" class="input--border" name="name" /></label>
         </p>
         <p>
-            <label>Your Email: <br><input type="email" name="email" /></label>
+<label class="label">Your Email: <br><input class="input--border" type=" email" name="email" /></label>
         </p>
         <p>
-            <label>Message:
-                <br><textarea name="message"></textarea></label>
+<label class="label">Message:
+                <br><textarea class="input--border" name="message"></textarea></label>
         </p>
         <p>
-            <button type="submit">Send</button>
+<button class="button button--active" type="submit">Send</button>
         </p>
     </form>
-</div>
+    </div>
+
 </div>
 
 {% include footer.html %}

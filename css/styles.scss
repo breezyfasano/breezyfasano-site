@@ -7,7 +7,7 @@
 $mint: #50E3C2;
 $electricpurp: #6935FF;
 $basegray: #2B2B2B;
-$lightgray: #efefef;
+$lightgray: #dadada;
 $headerfont: "Space Mono",
 'Courier New',
 Courier,
@@ -190,5 +190,6 @@ a {
 @import 'syntax';
 @import 'reset';
 @import 'page';
+@import 'form';
 @import 'footer';
 @import 'desktop-only';

@@ -62,7 +62,7 @@ a {
 }
 
 .navigation {
-    padding: 25px 15px 65px 0;
+    padding: 25px 15px 1vh 0;
     display: flex;
 }
 
@@ -92,9 +92,7 @@ a {
 .intro-container {
     background: $basegray;
     min-height: 48vh;
-    margin: 1vw;
-    box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(0, 0, 0, .3);
+    border: 25px solid white;
 }
 
 .myname {
@@ -120,6 +118,7 @@ a {
     padding: 0 5vw;
     font-family: $basefont;
     min-height: calc(100vh - 30vh); // sticky footer
+    margin: 0 auto 0 auto;
 }
 
 .post {
@@ -174,12 +173,11 @@ a {
 }
 
 .icon-a {
-    color: inherit;
 
     &:hover {
         border-bottom: 0px solid transparent;
         transition: .2s;
-        color: transparent;
+        color: transparent !important;
     }
 }
 

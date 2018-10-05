@@ -1,25 +1,27 @@
 // BEGIN DESKTOP ONLY STYLING
 @media (min-width: 1025px) {
 
-// header navigation
-    
-    .navigation li {
-        font-size: 3.4vmin;
+    // header navigation
 
-    }
+    .navigation {
+        padding-bottom: 5vh;
+        li {
+            font-size: 3.4vmin;
 
-    .navigation ul a {
-        &:hover {
+        }
+
+        & ul align-self::hover {
             border-bottom: 5px solid $electricpurp;
             transition: 0.2s;
         }
-}
+
+    }
 
 
     // home.html styling
 
     .intro-container {
-        height: 70vh;
+        min-height: 70vh;
     }
 
     .myname {
@@ -43,7 +45,7 @@
         font-size: 4.1vw;
         line-height: 3vw;
     }
-    
+
     // post content styling
 
     .post-date__post {
@@ -58,8 +60,16 @@
 
         p {
             font-size: 1.2rem;
-            line-height: 2.2rem;
+            line-height: 1.8rem;
         }
+
+        img {
+            max-width: 100%;
+        }
+    }
+    
+    .posts-container {
+        max-width: 76vw;
     }
 
     // contact form styling
@@ -67,10 +77,10 @@
     .form-container {
         width: 40vw;
     }
-    
+
     .button {
         font-size: 2vw;
-        padding: .3vw 4vw .6vw 4vw;
+        padding: .6vw 4vw .6vw 4vw;
     }
 
     // footer.html styling
@@ -82,7 +92,8 @@
 
 
 @media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) { // if unsupported IE
+(-ms-high-contrast: active) {
+    // if unsupported IE
 
     .myname {
         color: $mint;

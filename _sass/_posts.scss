@@ -1,12 +1,13 @@
 body:not(a) {
     font-family: $basefont;
     line-height: 2rem;
-    width: 100vw;
+    color: $basegray;
 }
 
 .posts-container {
     max-width: 1500px;
 }
+
 
 .post-date__post {
     padding: 0;
@@ -30,7 +31,7 @@ body:not(a) {
     }
 
     p {
-        line-height: 1.9rem; //main line height for post body
+        line-height: 1.8rem; //main line height for post body
         margin-top: 20px;
         font-size: 1rem;
         text-align: justify;
@@ -57,6 +58,13 @@ body:not(a) {
 
     h1, h2, h3 {
         margin: 1.5rem 0 1.2rem 0;
+    }
+
+    img {
+        margin: 0 auto 0 auto;
+        display: block;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 50vw;
     }
 }
 

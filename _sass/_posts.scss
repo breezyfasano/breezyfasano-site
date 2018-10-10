@@ -49,16 +49,22 @@ body:not(a) {
 
     h1 {
         font-size: 2.4rem;
+
     }
 
     h2 {
         font-size:1.7rem;
         color: $electricpurp;
+        margin: 2vw 0 0 0;
     }
 
-    h1, h2, h3 {
-        margin: 1.5rem 0 1.2rem 0;
+    h3 {
+        display: inline-block;
+        line-height: 2rem;
+        margin: 8vw 0 0 0;
+        text-decoration: underline;
     }
+
 
     img {
         margin: 0 auto 0 auto;

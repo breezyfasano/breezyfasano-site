@@ -31,7 +31,7 @@ body:not(a) {
     }
 
     p {
-        line-height: 1.8rem; //main line height for post body
+        line-height: 1.5rem; //main line height for post body
         margin-top: 20px;
         font-size: 1rem;
         text-align: justify;
@@ -53,7 +53,7 @@ body:not(a) {
     }
 
     h2 {
-        font-size:1.7rem;
+        font-size:1.5rem;
         color: $electricpurp;
         margin: 2vw 0 0 0;
     }
@@ -67,7 +67,7 @@ body:not(a) {
 
 
     img {
-        margin: 0 auto 0 auto;
+        margin: 50px auto 50px auto;
         display: block;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
         max-width: 50vw;

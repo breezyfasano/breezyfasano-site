@@ -4,13 +4,14 @@ title:  "Revisiting Skippy's"
 tags: design CSS content-stratgy 
 ---
 
-It's always nice to go back in time and look back at your past work, when you were just starting out. By nice, I mean extremely cringe-worthy. I know there are so many things I can improve on, and if I did it again, I would do it right. Although I am overall pleased with the site's design, the knowledge I have learned since then can help me provide a better user experience.
+It's always nice to go back in time and look back at your past work, when you were just starting out. By nice, I mean extremely cringe-worthy. I know there are so many things I can improve on, and if I did it again, I would do it right.
 
 ## The Goal
 
 In 2015, I offered to build a site for a local restaurant for some much needed practice. That restaurant is [Skippy's Gyros](http://www.skippysgyros.com/), and they describe themselves as "food for suburban hunger". My goal was to build a site that made it quick and easy to find essential information about the business, showcase the menu, and represent their philosophy while being aesthetically pleasing.
 
 I no longer have access to this code. It was before I knew of the wonders of Git, or cloud storage apparently. However, I will walk you through the top mistakes and issues I had while building this project, and explain what I would do now as to best optimize this design and site architecture.
+
 
 ## Room for Improvement
 
@@ -66,6 +67,6 @@ Perhaps the most heinous offense is that there is no call to action. What should
 
 ## Conclusion
 
-I made a lot of mistakes with this one. I've made a lot of mistakes after this one. But it is really something to see just how far I've come. I went from someone who just wanted to make a website that looks super cool and shows off how pretty I can make things, to someone who wants to create a product that can get the user to their goal as quick and painless as possible, and make it look good doing it. My mistakes were invaluable, because I was able to directly see how my decisions effected a customer base.
+I made a lot of mistakes with this one. I've made a lot of mistakes after this one. But it is really something to see just how far I've come. I went from someone who just wanted to make a website that looks super cool and shows off how pretty I can make things, to someone who wants to create a product that can get the user to their goal as quick and painless as possible, and make it look good doing it. My mistakes were invaluable, because I was able to directly see how my decisions affected a customer base.
 
-I'm excited for my more user-centered and optimized future, and all the mistakes that will come with it.
+Although I am overall pleased with the site's design, the knowledge I have learned since then helps me provide a better user experience in my work. I'm excited for my more user-centered and optimized future, and all the mistakes that will come with it.

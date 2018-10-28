@@ -3,27 +3,27 @@
 
 
 <div class="posts-container">
-    <h1 class="page-header page-header--spacing"> {{ page.title }}</h1>
+        <div class="form-container">
+                <h1 class="page-header page-header--spacing"> {{ page.title }}</h1>
 
-    <span class="post-content">{{ content }}</span>
+                <span class="post-content">{{ content }}</span>
 
-    <div class="form-container">
-            <form name="contact" method="POST" netlify>
-        <p>
-<label class="label">Your Name: <br><input type="text" class="input--border" name="name" /></label>
-        </p>
-        <p>
-<label class="label">Your Email: <br><input class="input--border" type=" email" name="email" /></label>
-        </p>
-        <p>
-<label class="label">Message:
-                <br><textarea class="input--border" name="message"></textarea></label>
-        </p>
-        <p>
-<button class="button button--active" type="submit">Send</button>
-        </p>
-    </form>
-    </div>
+                <form name="contact" method="POST" netlify>
+                        <p>
+                                <label class="label">Your Name: <br><input type="text" class="input--border" name="name" /></label>
+                        </p>
+                        <p>
+                                <label class="label">Your Email: <br><input class="input--border" type=" email" name="email" /></label>
+                        </p>
+                        <p>
+                                <label class="label">Message:
+                                        <br><textarea class="input--border" name="message"></textarea></label>
+                        </p>
+                        <p>
+                                <button class="button button--active" type="submit">Send</button>
+                        </p>
+                </form>
+        </div>
 
 </div>
 

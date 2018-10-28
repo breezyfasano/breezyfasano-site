@@ -3,18 +3,18 @@
 
     // header navigation
 
+    .icons {
+        margin: 0 0 0 auto;
+    }
+
+
     .navigation {
         padding-bottom: 5vh;
+        flex-direction: row;
         li {
             font-size: 3.4vmin;
 
         }
-
-        & ul align-self::hover {
-            border-bottom: 5px solid $electricpurp;
-            transition: 0.2s;
-        }
-
     }
 
 
@@ -56,6 +56,7 @@
     .post-content {
         h2 {
             font-size: 2rem;
+            margin: 3vw 0 0 0;
         }
 
         h3 {
@@ -74,13 +75,16 @@
     }
     
     .posts-container {
-        max-width: 76vw;
+        max-width: 89vw;
+        margin: 2vw auto 0 auto;
     }
 
     // contact form styling
-
+    
+    
     .form-container {
         width: 40vw;
+        margin: 2vw auto 0 auto;
     }
 
     .button {

@@ -5,6 +5,7 @@ body:not(a) {
 }
 
 
+
 .posts-container {
     padding: 0 5vw;
     font-family: $basefont;
@@ -54,19 +55,11 @@ body:not(a) {
     color: $basegray;
 }
 
-a {
-    color: $electricpurp;
-
-    &:hover {
-        border-bottom: 5px solid $electricpurp;
-        transition: 0.2s;
-    }
-}
 
 .icon-a {
 
     &:hover {
-        border-bottom: 0px solid transparent;
+        border-bottom: 0;
         transition: .2s;
         color: transparent !important;
     }

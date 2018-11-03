@@ -1,20 +1,52 @@
 // BEGIN DESKTOP ONLY STYLING
 @media (min-width: 1025px) {
 
+    a {
+    color: $electricpurp;
+    &:hover {
+        border-bottom: 5px solid $electricpurp;
+        transition: 0.2s;
+    }
+}
+
     // header navigation
 
     .icons {
         margin: 0 0 0 auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .off-home-icons {
+        padding-right: 5vw;
     }
 
 
     .navigation {
-        padding-bottom: 5vh;
+        position: static;
+        z-index: 0;
+        padding: 5vh 0 5vh 0;
         flex-direction: row;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        background: transparent;
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
         li {
             font-size: 3.4vmin;
-
         }
+    }
+
+    #close-icon, #close-icon-li {
+        display: none;
+    }
+
+    #open-icon {
+        display: none;
     }
 
 
@@ -22,6 +54,7 @@
 
     .intro-container {
         min-height: 70vh;
+        padding: 0;
     }
 
     .myname {

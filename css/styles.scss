@@ -22,12 +22,10 @@ sans-serif;
 //TO DO
 
 /*
-1. Add a favicon
-2. Tablet styling optimizations
-3. Add to about me page
-4. Add to contact page
-5. Generate an archive
-6. Add social media and contact link to footer
+Tablet styling optimizations
+Add social media and contact link to footer
+Fix homepage desktop navigation - make it white again
+Make homepage mobile nav color $basegray
 */
 
 
@@ -35,14 +33,12 @@ sans-serif;
     box-sizing: border-box;
 }
 
-// font awesome optimizations
-
-
-// BEGIN MOBILE FIRST STYLING
-
 a {
+    color: $electricpurp;
     text-decoration: none;
 }
+
+// BEGIN MOBILE FIRST STYLING
 
 // HOME styling
 

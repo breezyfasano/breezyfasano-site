@@ -3,6 +3,7 @@
 <div class="intro-container">
     <nav class="navigation">
         <ul>
+            <li id="close-icon-li"><a href="javascript:void(0)" style="font-size: 30px; display: block; margin: 20px 0 5px 0" id="close-icon">X</a></li>
             {% for page in site.pages %}
             {% if page.navi %}
             <li>
@@ -17,7 +18,7 @@
 <a class="icon-a" href="https://www.linkedin.com/in/breezyfasano"><span class="fas fa-linkedin"></span></a>
 </div>
     </nav>
-
+    <a href="javascript:void(0)" style="font-size: 30px; font-family: fontawesome; color: #fff;" class="fas fa-bars" id="open-icon"></a>
     <h1 class="myname">breezy fasano<br> web design &amp; development</h1>
     <span class="intro-desc"> {{ content }} </span>
 </div>

@@ -1,5 +1,6 @@
-<nav class="navigation header-nav">
+<nav class="header-nav navigation" id="nav">
     <ul>
+        <li id="close-icon-li"><a href="javascript:void(0)" style="font-size: 30px;" id="close-icon">X</a></li>
         <li><a href="{{ site.url }}">Home</a></li>
         {% for page in site.pages %}
         {% if page.navi %}
@@ -9,9 +10,11 @@
         {% endif %}
         {% endfor %}
     </ul>
-    <div class="icons">
+    <div class="off-home-icons icons">
         <a class="icon-a" href="https://www.github.com/breezyfasano"><span class="fas fa-github"></a></span>
         <a class="icon-a" href="https://www.codepen.io/breezyfasano"><span class="fas fa-codepen"></span></>
         <a class="icon-a" href="https://www.linkedin.com/in/breezyfasano"><span class="fas fa-linkedin"></span></a>
     </div>
 </nav>
+
+<a href="javascript:void(0)" style="font-family: fontawesome;" class="header-nav-open-icon fas fa-bars" id="open-icon"></a>

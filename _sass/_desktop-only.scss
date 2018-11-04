@@ -39,9 +39,13 @@
         li {
             font-size: 3.4vmin;
         }
-        a {
-            color: #fff;
+    }
+    .header-nav a {
+            color: $basegray;
         }
+
+    .home-nav a {
+        color: #fff;
     }
 
     #close-icon, #close-icon-li {

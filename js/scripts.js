@@ -15,19 +15,12 @@ const openIcon = document.getElementById('open-icon');
 const closeIcon = document.getElementById('close-icon');
 
 
-const openNav = () => {
-    let navbarChildren = navbar.children;
-    for (let i = 0; i < 2; i++) {
-        let widthValue = '55vw';
-        navbar.style.width = widthValue;
-    }
+const openNav = () => { // sets the width of 
+    navbar.style.width = '55vw';
 };
 
 const closeNav = () => {
-    for (let i = 0; i < 2; i++) {
         navbar.style.width = 0;
-        navbarChildren[i].style.width = 0;
-    }
 };
 
 

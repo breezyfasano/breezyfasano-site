@@ -6,24 +6,9 @@ tags: CMS Jekyll
 
 Everywhere I've looked, many have been saying the same thing: "BUILD A BLOG. Document your process. Write things down. You'll learn from it." I'm not the best writer, but hey. Alright. I'll give it a shot. 
 
-I asked myself the question we all dread - **so what tech am I gonna use?**
+I asked myself the question we all dread - **so what tech am I going to use?**
 
 Buzzwords like Jekyll, Gatsby, and Hugo were all over [/r/webdev](https://www.reddit.com/r/webdev). I had no idea what a static site generator was, much less which one was best to use. I poked around a bit, and determined that Jekyll was probably the best way to go for me - the documentation was clear and detailed, and the learning curve of React/Gatsby didn't sound appealing in my rush to get started. Jekyll uses a templating language called Liquid, and accompanied with Markdown, makes for a pretty powerful CMS.
-
-The first thing you need to do is install Jekyll. Make sure you have the most updated version of Ruby, and run `$ gem install jekyll bundler` in the Terminal. 
-
-Jekyll requires a very precise directory order.  What's great about Jekyll & Bundler is that you can spin up a new site template with ```$ Jekyll new [directory_name_here]```. It includes a default theme, which will be helpful when looking at the different moving parts. The basic template for a project at generation is something like this:
-
-```
-_posts
-_config.yml
-.gitignore
-404.html
-about.md
-Gemfile
-Gemfile.lock
-index.md
-```
 
 From here on, I will discuss Jekyll as it pertains to my personal site. The Jekyll Docs have a great [step-by-step setup tutorial](https://jekyllrb.com/docs/step-by-step/01-setup/) you can view if you want to know more about how it works, and what other features are available.
 
